@@ -106,6 +106,9 @@ const controls = new OrbitControls(camera, canvas);
 controls.target.set(0, 1, 0);
 controls.enableDamping = true;
 
+// Vertical angle limits
+controls.maxPolarAngle = Math.PI / 2;
+
 /**
  * Renderer
  */
