@@ -30,9 +30,9 @@ gltfLoader.setDRACOLoader(dracoLoader);
 
 let mixer = null;
 
-gltfLoader.load("/models/hamburger.glb", (gltf) => {
-  scene.add(gltf.scene);
-});
+// gltfLoader.load("/models/hamburger.glb", (gltf) => {
+//   scene.add(gltf.scene);
+// });
 
 /**
  * Floor
