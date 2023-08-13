@@ -22,6 +22,7 @@ const scene = new THREE.Scene();
 /**
  * Models
  */
+
 const dracoLoader = new DRACOLoader();
 dracoLoader.setDecoderPath("/draco/");
 
@@ -37,6 +38,7 @@ let mixer = null;
 /**
  * Floor
  */
+
 const floor = new THREE.Mesh(
   new THREE.PlaneGeometry(50, 50),
   new THREE.MeshStandardMaterial({
@@ -52,6 +54,7 @@ scene.add(floor);
 /**
  * Lights
  */
+
 const ambientLight = new THREE.AmbientLight(0xffffff, 0.8);
 scene.add(ambientLight);
 
@@ -69,6 +72,7 @@ scene.add(directionalLight);
 /**
  * Sizes
  */
+
 const sizes = {
   width: window.innerWidth,
   height: window.innerHeight,
@@ -91,6 +95,7 @@ window.addEventListener("resize", () => {
 /**
  * Camera
  */
+
 // Base camera
 const camera = new THREE.PerspectiveCamera(
   75,
@@ -112,6 +117,7 @@ controls.maxPolarAngle = Math.PI / 2;
 /**
  * Renderer
  */
+
 const renderer = new THREE.WebGLRenderer({
   canvas: canvas,
 });
@@ -124,6 +130,7 @@ renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
 /**
  * Animate
  */
+
 const clock = new THREE.Clock();
 let previousTime = 0;
 
